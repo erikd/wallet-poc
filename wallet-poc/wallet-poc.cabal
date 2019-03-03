@@ -1,0 +1,30 @@
+name:                wallet-poc
+version:             0.1.0.0
+synopsis:            Proof of concept for a new wallet
+-- description:
+-- bug-reports:
+license:             MIT
+license-file:        LICENSE
+author:              IOHK
+maintainer:          operations@iohk.io
+-- copyright:
+category:            Currency
+extra-source-files:  CHANGELOG.md
+cabal-version:       >= 1.10
+build-type:          Simple
+
+-- library
+--   hs-source-dirs:      src
+--   -- exposed-modules:
+--   -- other-modules:
+--   -- other-extensions:
+--   build-depends:       base == 4.12.*
+--   default-language:    Haskell2010
+
+executable wallet-poc
+  hs-source-dirs:      main
+  main-is:             wallet-poc.hs
+  -- other-modules:
+  -- other-extensions:
+  build-depends:       base == 4.12.*
+  default-language:    Haskell2010
