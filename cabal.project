@@ -11,7 +11,18 @@ source-repository-package
   type: git
   location: https://github.com/input-output-hk/cardano-chain
   tag: 0d6030d6e8e84dcdfa1eac2d8137030f566da2c0
-  subdir: binary, crypto, .
+  subdir: binary
+
+source-repository-package
+  type: git
+  location: https://github.com/input-output-hk/cardano-chain
+  tag: 0d6030d6e8e84dcdfa1eac2d8137030f566da2c0
+  subdir: crypto
+
+source-repository-package
+  type: git
+  location: https://github.com/input-output-hk/cardano-chain
+  tag: 0d6030d6e8e84dcdfa1eac2d8137030f566da2c0
 
 source-repository-package
   type: git
@@ -25,6 +36,12 @@ source-repository-package
 
 source-repository-package
   type: git
+  location: https://github.com/well-typed/cborg
+  tag: 80fbe0ee5e67a5622e2cb9eaa9d8594a2214322d
+  subdir: cborg
+
+source-repository-package
+  type: git
   location: https://github.com/input-output-hk/iohk-monitoring-framework
   tag: 8456e488fd26e34f0d15c957965d6cc5c51427af
 
@@ -32,5 +49,16 @@ source-repository-package
   type: git
   location: https://github.com/input-output-hk/ouroboros-network
   tag: caabc545ae45c6b702300f7a2c6fdb54cb876b00
-  subdir: typed-protocols
+  subdir: io-sim-classes
 
+source-repository-package
+  type: git
+  location: https://github.com/input-output-hk/ouroboros-network
+  tag: caabc545ae45c6b702300f7a2c6fdb54cb876b00
+  subdir: ouroboros-network
+
+source-repository-package
+  type: git
+  location: https://github.com/input-output-hk/ouroboros-network
+  tag: caabc545ae45c6b702300f7a2c6fdb54cb876b00
+  subdir: typed-protocols

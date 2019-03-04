@@ -4,6 +4,10 @@ packages:
   - wallet-poc
 
 extra-deps:
+  - ekg-0.4.0.15
+  - ekg-json-0.1.0.6
+  - time-units-1.0.0
+
   - git: https://github.com/input-output-hk/cardano-prelude
     commit: ff5fd5f33849be8a826506c34e5b0278f267f804
     subdirs:
@@ -21,7 +25,12 @@ extra-deps:
   - git: https://github.com/input-output-hk/ouroboros-network
     commit: caabc545ae45c6b702300f7a2c6fdb54cb876b00
     subdirs:
+      - ouroboros-network
+      - io-sim-classes
       - typed-protocols
+
+  - git: https://github.com/input-output-hk/iohk-monitoring-framework
+    commit: 8456e488fd26e34f0d15c957965d6cc5c51427af
 
 nix:
   shell-file: scripts/nix/stack-shell.nix

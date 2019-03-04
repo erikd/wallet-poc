@@ -13,18 +13,20 @@ extra-source-files:  CHANGELOG.md
 cabal-version:       >= 1.10
 build-type:          Simple
 
--- library
---   hs-source-dirs:      src
---   -- exposed-modules:
---   -- other-modules:
---   -- other-extensions:
---   build-depends:       base == 4.12.*
---   default-language:    Haskell2010
+library
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+  exposed-modules:     Cardano.Wallet.ChainSync
+  -- other-modules:
+  -- other-extensions:
+  build-depends:       base == 4.12.*
+                     , io-sim-classes
+                     , ouroboros-network
 
 executable wallet-poc
   hs-source-dirs:      main
   main-is:             wallet-poc.hs
+  default-language:    Haskell2010
   -- other-modules:
   -- other-extensions:
   build-depends:       base == 4.12.*
-  default-language:    Haskell2010
