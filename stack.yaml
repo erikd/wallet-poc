@@ -1,4 +1,4 @@
-resolver: https://raw.githubusercontent.com/input-output-hk/cardano-prelude/ff5fd5f33849be8a826506c34e5b0278f267f804/snapshot.yaml
+resolver: https://raw.githubusercontent.com/input-output-hk/cardano-prelude/28f22dd93ce55b8af3b7e18a5b74762bd919eea8/snapshot.yaml
 
 packages:
   - wallet-poc
@@ -9,28 +9,29 @@ extra-deps:
   - time-units-1.0.0
 
   - git: https://github.com/input-output-hk/cardano-prelude
-    commit: ff5fd5f33849be8a826506c34e5b0278f267f804
+    commit: 28f22dd93ce55b8af3b7e18a5b74762bd919eea8
     subdirs:
       - .
       - test
 
-  - git: https://github.com/input-output-hk/cardano-chain
-    commit: 4d9eec080374179bf15bf9c4fca09cc7d73e5f53
+  - git: https://github.com/input-output-hk/cardano-ledger
+    commit: 6b5e0923d30f1d331db6b063be047571fb578f37
     subdirs:
       - binary
       - binary/test
       - crypto
       - crypto/test
+      - .
 
   - git: https://github.com/input-output-hk/ouroboros-network
-    commit: caabc545ae45c6b702300f7a2c6fdb54cb876b00
+    commit: 867680388509df2e699353ff1d971fc359576e75
     subdirs:
       - ouroboros-network
       - io-sim-classes
       - typed-protocols
 
   - git: https://github.com/input-output-hk/iohk-monitoring-framework
-    commit: 8456e488fd26e34f0d15c957965d6cc5c51427af
+    commit: 46b1cb807e2ff1f475890a5474e667e472c60d95
 
 nix:
   shell-file: scripts/nix/stack-shell.nix
