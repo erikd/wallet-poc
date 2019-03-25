@@ -20,8 +20,17 @@ library
   -- other-modules:
   -- other-extensions:
   build-depends:       base == 4.12.*
+                     , cardano-binary
+                     , cardano-ledger
+                     , cardano-crypto-wrapper
+                     , cardano-prelude
+                     , cryptonite
+                     , deepseq
+                     , fingertree
                      , io-sim-classes
+                     , memory
                      , ouroboros-network
+                     , serialise
 
 executable wallet-poc
   hs-source-dirs:      main
